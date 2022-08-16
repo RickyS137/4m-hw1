@@ -1,23 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+function AboutUs (){
+  return (
+      <>
+        <h1>GeekTech</h1>
+        <p>GeekStudio</p>
+      </>
+  )
+}
+function Portfolio(){
+  return  (
+      <>
+        <ul>Animals
+          <li>Bear</li>
+          <li>Snake</li>
+          <li>Monke
+            <ul>
+              <li>Monke 2
+                <ul>
+                  <li>
+                    Monke 3
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </>
+  )
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <AboutUs/>
+      <Portfolio/>
     </div>
   );
 }
